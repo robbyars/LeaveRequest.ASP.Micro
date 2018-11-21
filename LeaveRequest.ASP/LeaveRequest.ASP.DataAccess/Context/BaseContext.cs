@@ -14,5 +14,7 @@ namespace LeaveRequest.ASP.DataAccess.Context
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Company> Companies { get; set; }
+        public DbSet<EmployeeLeave> EmployeeLeaves { get; set; }
+        public DbSet<LeaveType> LeaveTypes { get; set; }
     }
 }

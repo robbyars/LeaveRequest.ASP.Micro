@@ -22,6 +22,7 @@ namespace LeaveRequest.ASP.DataAccess.Param
         public string Password { get; set; }
         public int ManagerId { get; set; }
         public string Departments { get; set; }
+        public string Companies { get; set; }
         public EmployeeParam() { }
         public EmployeeParam(Employee employee)
         {
@@ -30,6 +31,7 @@ namespace LeaveRequest.ASP.DataAccess.Param
             this.Email = employee.Email;
             this.Phone = employee.Phone;
             this.JoinDate = employee.JoinDate;
+            this.JobTitle = employee.JobTitle;
             this.Status = employee.Status;
             this.TotalChilds = employee.TotalChilds;
             this.ThisYear = employee.ThisYear;
@@ -37,6 +39,7 @@ namespace LeaveRequest.ASP.DataAccess.Param
             this.Password = employee.Password;
             this.ManagerId = employee.ManagerId;
             this.Departments = employee.Departments.Name;
+            this.Companies = employee.Departments.Companies.Name;
         }
     }
 }

@@ -52,13 +52,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\Application\IEmployeeRepository.cs" />
+    <Compile Include="Interface\Application\IEmployeeLeaveRepository.cs" />
+    <Compile Include="Interface\IEmployeeLeaveService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeaveRequest.ASP.DataAccess\LeaveRequest.ASP.DataAccess.csproj">
+      <Project>{3d041c1b-2b78-4978-8e37-368185efb044}</Project>
+      <Name>LeaveRequest.ASP.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

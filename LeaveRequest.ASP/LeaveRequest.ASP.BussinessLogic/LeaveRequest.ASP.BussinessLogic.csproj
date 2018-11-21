@@ -54,11 +54,28 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\EmployeeLeaveRepository.cs" />
+    <Compile Include="Service\EmployeeLeaveService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeaveRequest.ASP.Common\LeaveRequest.ASP.Common.csproj">
+      <Project>{dc0b9c03-5055-4f2f-b18d-d62b5580e1f9}</Project>
+      <Name>LeaveRequest.ASP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeaveRequest.ASP.Core\LeaveRequest.ASP.Core.csproj">
+      <Project>{19cd37d4-d283-43e5-81f9-36e80094ce58}</Project>
+      <Name>LeaveRequest.ASP.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeaveRequest.ASP.DataAccess\LeaveRequest.ASP.DataAccess.csproj">
+      <Project>{3d041c1b-2b78-4978-8e37-368185efb044}</Project>
+      <Name>LeaveRequest.ASP.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

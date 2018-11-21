@@ -1,0 +1,16 @@
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.BussinessLogic.exe.config
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.BussinessLogic.exe
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.BussinessLogic.pdb
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\EntityFramework.dll
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.Common.exe
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.Core.exe
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.DataAccess.exe
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.Common.pdb
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.Core.pdb
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\LeaveRequest.ASP.DataAccess.pdb
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\EntityFramework.xml
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\obj\Debug\LeaveRequest.ASP.BussinessLogic.exe
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\obj\Debug\LeaveRequest.ASP.BussinessLogic.pdb
+E:\C#\visual studio 2015\Projects\LeaveRequest\LeaveRequest.ASP.Micro\LeaveRequest.ASP\LeaveRequest.ASP.BussinessLogic\obj\Debug\LeaveRequest.ASP.BussinessLogic.csprojResolveAssemblyReference.cache

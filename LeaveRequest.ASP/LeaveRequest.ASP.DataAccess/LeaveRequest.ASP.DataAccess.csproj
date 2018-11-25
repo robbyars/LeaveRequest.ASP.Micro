@@ -53,25 +53,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\BaseContext.cs" />
-    <Compile Include="Migrations\201811190229583_addingModelMaster.cs" />
-    <Compile Include="Migrations\201811190229583_addingModelMaster.Designer.cs">
-      <DependentUpon>201811190229583_addingModelMaster.cs</DependentUpon>
+    <Compile Include="Migrations\201811210715480_addingModelEmployeeLEave.cs" />
+    <Compile Include="Migrations\201811210715480_addingModelEmployeeLEave.Designer.cs">
+      <DependentUpon>201811210715480_addingModelEmployeeLEave.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811190242385_addingModelMaster1.cs" />
-    <Compile Include="Migrations\201811190242385_addingModelMaster1.Designer.cs">
-      <DependentUpon>201811190242385_addingModelMaster1.cs</DependentUpon>
+    <Compile Include="Migrations\201811210720338_addingModel11.cs" />
+    <Compile Include="Migrations\201811210720338_addingModel11.Designer.cs">
+      <DependentUpon>201811210720338_addingModel11.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811190252075_addingModelMaster2.cs" />
-    <Compile Include="Migrations\201811190252075_addingModelMaster2.Designer.cs">
-      <DependentUpon>201811190252075_addingModelMaster2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811190626254_addingModelEmployeeLeave.cs" />
-    <Compile Include="Migrations\201811190626254_addingModelEmployeeLeave.Designer.cs">
-      <DependentUpon>201811190626254_addingModelEmployeeLeave.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811201139297_addingModelEmployeeLeaves.cs" />
-    <Compile Include="Migrations\201811201139297_addingModelEmployeeLeaves.Designer.cs">
-      <DependentUpon>201811201139297_addingModelEmployeeLeaves.cs</DependentUpon>
+    <Compile Include="Migrations\201811240724173_addingModelEmpL.cs" />
+    <Compile Include="Migrations\201811240724173_addingModelEmpL.Designer.cs">
+      <DependentUpon>201811240724173_addingModelEmpL.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Company.cs" />
@@ -98,20 +90,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811190229583_addingModelMaster.resx">
-      <DependentUpon>201811190229583_addingModelMaster.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811210715480_addingModelEmployeeLEave.resx">
+      <DependentUpon>201811210715480_addingModelEmployeeLEave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811190242385_addingModelMaster1.resx">
-      <DependentUpon>201811190242385_addingModelMaster1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811210720338_addingModel11.resx">
+      <DependentUpon>201811210720338_addingModel11.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811190252075_addingModelMaster2.resx">
-      <DependentUpon>201811190252075_addingModelMaster2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811190626254_addingModelEmployeeLeave.resx">
-      <DependentUpon>201811190626254_addingModelEmployeeLeave.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811201139297_addingModelEmployeeLeaves.resx">
-      <DependentUpon>201811201139297_addingModelEmployeeLeaves.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811240724173_addingModelEmpL.resx">
+      <DependentUpon>201811240724173_addingModelEmpL.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

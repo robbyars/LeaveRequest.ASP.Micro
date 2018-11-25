@@ -7,13 +7,13 @@ namespace LeaveRequest.ASP.DataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addingModelMaster : IMigrationMetadata
+    public sealed partial class addingModel11 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addingModelMaster));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addingModel11));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811190229583_addingModelMaster"; }
+            get { return "201811210720338_addingModel11"; }
         }
         
         string IMigrationMetadata.Source

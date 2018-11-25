@@ -19,6 +19,7 @@ namespace LeaveRequest.ASP.DataAccess.Param
         public DateTimeOffset? StartDate { get; set; }
         public DateTimeOffset? EndDate { get; set; }
         public string LeaveType { get; set; }
+        public int? DeductDays { get; set; }
         public int? LeaveDays { get; set; }
         public string Backup { get; set; }
         public string Note { get; set; }
@@ -27,7 +28,9 @@ namespace LeaveRequest.ASP.DataAccess.Param
         public int? LastYearBefore { get; set; }
         public int? ThisYearAfter { get; set; }
         public int? LastYearAfter { get; set; }
-
+        public int? DaysSpecial { get; set; }
+        public DateTimeOffset? StartDateSpecial { get; set; }
+        public DateTimeOffset? EndDateSpecial { get; set; }
         public EmployeeLeaveParam() { }
         public EmployeeLeaveParam(Employee employee)
         {
@@ -37,6 +40,8 @@ namespace LeaveRequest.ASP.DataAccess.Param
             this.Company = employee.Departments.Companies.Name;
             this.Department = employee.Departments.Name;
             this.JobTitle = employee.JobTitle;
+            this.ThisYearBefore = employee.ThisYear;
+            this.LastYearBefore = employee.LastYear;
         }
 
     }

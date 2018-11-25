@@ -13,6 +13,10 @@ namespace LeaveRequest.ASP.DataAccess.Models
         public LeaveType LeaveTypes { get; set; }
         public DateTimeOffset? StartDate { get; set; }
         public DateTimeOffset? EndDate { get; set; }
+        public DateTimeOffset? StartDateSpecial { get; set; }
+        public DateTimeOffset? EndDateSpecial { get; set; }
+        public int? DaysSpecial { get; set; }
+        public int? DeductDays { get; set; }
         public int? LeaveDays { get; set; }
         public string Backup { get; set; }
         public string Note { get; set; }
@@ -24,16 +28,51 @@ namespace LeaveRequest.ASP.DataAccess.Models
         public EmployeeLeave() { }
         public EmployeeLeave(EmployeeLeaveParam employeeleaveparam)
         {
-            this.StartDate = employeeleaveparam.StartDate;
-            this.EndDate = employeeleaveparam.EndDate;
+            if (employeeleaveparam.StartDate == null)
+            {
+                this.StartDate = employeeleaveparam.StartDateSpecial;
+                this.EndDate = employeeleaveparam.EndDateSpecial;
+
+            }
+            else if(employeeleaveparam.StartDate != null && employeeleaveparam.StartDateSpecial != null)
+            {
+                this.StartDate = employeeleaveparam.StartDate;
+                this.EndDate = employeeleaveparam.EndDateSpecial;
+                this.StartDateSpecial = employeeleaveparam.StartDateSpecial;
+                this.EndDateSpecial = employeeleaveparam.EndDateSpecial;
+            }
+            else
+            {
+                this.StartDate = employeeleaveparam.StartDate;
+                this.EndDate = employeeleaveparam.EndDate;
+            }
+            this.DeductDays = employeeleaveparam.DeductDays;
             this.LeaveDays = employeeleaveparam.LeaveDays;
             this.Backup = employeeleaveparam.Backup;
             this.Note = employeeleaveparam.Note;
             this.ApprovalStatus = employeeleaveparam.ApprovalStatus;
             this.ThisYearBefore = employeeleaveparam.ThisYearBefore;
             this.LastYearBefore = employeeleaveparam.LastYearBefore;
-            this.ThisYearAfter = employeeleaveparam.LastYearAfter;
-            this.LastYearAfter = employeeleaveparam.LastYearAfter;
+            if (employeeleaveparam.LastYearBefore == 0)
+            {
+                this.ThisYearAfter = employeeleaveparam.ThisYearBefore - employeeleaveparam.DeductDays;
+                this.LastYearAfter = employeeleaveparam.LastYearBefore;
+            }
+            else if(employeeleaveparam.LastYearBefore > employeeleaveparam.DeductDays)
+            {
+                this.ThisYearAfter = employeeleaveparam.ThisYearBefore;
+                int? hasil = employeeleaveparam.LastYearBefore - employeeleaveparam.DeductDays;
+                this.LastYearAfter = 0 + hasil;
+                
+            }
+            else if (employeeleaveparam.LastYearBefore < employeeleaveparam.DeductDays)
+            {
+                int? nol = employeeleaveparam.DeductDays - employeeleaveparam.LastYearBefore;
+                this.ThisYearAfter = employeeleaveparam.LastYearBefore - nol;
+                this.LastYearBefore = 0;
+                this.LastYearAfter = 0;
+            }
+            
             this.CreateDate = DateTimeOffset.Now.LocalDateTime;
             
         }

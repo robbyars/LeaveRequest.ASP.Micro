@@ -56,5 +56,11 @@ namespace LeaveRequest.ASP.Controllers
 
             return View(employeeleaveparam);
         }
+        [HttpPost]
+        public ActionResult GetTypeLeave(int? id)
+        {
+                var obj = _employeeLeaveService.GetTypeLeave(id);
+                return Content(obj.TotalDays.ToString());
+        }
     }
 }

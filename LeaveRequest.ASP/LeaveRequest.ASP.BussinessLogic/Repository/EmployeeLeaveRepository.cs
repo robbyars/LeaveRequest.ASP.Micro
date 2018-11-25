@@ -34,6 +34,7 @@ namespace LeaveRequest.ASP.BussinessLogic.Repository
             var emp = _context.Employees.Find(employeeleaveparam.EmployeeId);
             var type = _context.LeaveTypes.Find(Convert.ToInt16(employeeleaveparam.LeaveType));
             var push = new EmployeeLeave(employeeleaveparam);
+            push.ApprovalStatus = "Submited";
             push.Employees = emp;
             push.LeaveTypes = type;
             _context.EmployeeLeaves.Add(push);
